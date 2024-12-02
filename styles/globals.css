@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-primary: 66, 133, 244;
+  --color-primary-darker: 59, 120, 220;
+
+  --color-black: 3, 10, 14;
+  --color-dark: 7, 14, 18;
+  --color-darker: 11, 18, 22;
+
+  --color-white: 250, 250, 250;
+  --color-light: 240, 240, 240;
+  --color-lighter: 246, 246, 246;
+
+  --color-muted: 0, 0, 0, 0.5;
+  --color-muted-dark: 255, 255, 255, 0.5;
+
+  --color-border: 0, 0, 0, 0.075;
+  --color-border-dark: 255, 255, 255, 0.1;
+}
