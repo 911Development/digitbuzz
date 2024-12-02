@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // Allow JavaScript files
+    "checkJs": false, // Don't check JS files
+    "jsx": "preserve",
+    "module": "esnext",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ] // Path alias configuration
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": false
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx" // Include all JS and JSX files
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
