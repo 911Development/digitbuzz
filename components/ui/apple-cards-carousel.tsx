@@ -263,7 +263,7 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
+          // fill
           className="object-cover hover:opacity-75 absolute z-10 inset-0 h-full"
         />
       </motion.button>
@@ -280,6 +280,10 @@ export const BlurImage = ({
   ...rest
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(false);
+
+  // Ensure that src is a string
+  const imageSrc = typeof src === "string" ? src : (src as { src: string }).src;
+
   return (
     <img
       className={cn(
@@ -287,13 +291,11 @@ export const BlurImage = ({
         isLoading ? "blur-sm" : "blur-0",
         className
       )}
-      // onLoad={() => setLoading(false)}
-      src={src}
+      src={imageSrc}
       width={width}
       height={height}
       loading="lazy"
       decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />
