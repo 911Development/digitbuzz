@@ -50,16 +50,16 @@ const Layout = ({ children }) => (
       <section className="col-span-6">
         <section className=" flex items-center justify-center gap-4">
           <Link href={"/"} className="text-white">
-            <FontAwesomeIcon size="xl" icon={faInstagram} />
+            <FontAwesomeIcon size="lg" icon={faInstagram} />
           </Link>
           <Link href={"/"} className="text-white">
-            <FontAwesomeIcon size="xl" icon={faTwitter} />
+            <FontAwesomeIcon size="lg" icon={faTwitter} />
           </Link>
           <Link href={"/"} className="text-white">
-            <FontAwesomeIcon size="xl" icon={faLinkedin} />
+            <FontAwesomeIcon size="lg" icon={faLinkedin} />
           </Link>
           <Link href={"/"} className="text-white">
-            <FontAwesomeIcon size="xl" icon={faFacebook} />
+            <FontAwesomeIcon size="lg" icon={faFacebook} />
           </Link>
         </section>
         <br />
@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
             letterSpacing: ["2px", "2px", "2px", "10px"],
           }}
           transition={{ ease: "easeOut", duration: 1.5 }}
-          className="text-white font-bold text-center text-4xl lg:text-5xl"
+          className="text-white font-bold text-center text-xl lg:text-4xl lg:text-5xl"
         >
           DIGIT BUZZ
         </motion.h1>
