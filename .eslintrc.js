@@ -10,7 +10,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   rules: {
-    // Add any custom rules here
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "error",
   },
   settings: {
     react: {
