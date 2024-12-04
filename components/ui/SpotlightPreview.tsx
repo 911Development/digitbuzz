@@ -36,7 +36,7 @@ export function SpotlightPreview({ children }) {
           in the Digital World!
         </p>
         <br />
-        <Button type={"button"} variant={"dark-outline"}>
+        <Button type={"button"} variant={"dark-outline"} className={""}>
           Explore more
         </Button>
       </div>
