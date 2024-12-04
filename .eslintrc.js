@@ -10,12 +10,13 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   rules: {
-    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off", // Disable the 'React' in scope rule
     "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "off", // Turn off this rule as well
   },
   settings: {
     react: {
-      version: "detect",
+      version: "detect", // Automatically detect the React version
     },
   },
 };
