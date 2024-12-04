@@ -7,6 +7,16 @@ const Button = ({ type, variant, className, children }) => {
       break;
     }
 
+    case "dark": {
+      classes += `bg-dark hover:bg-dark-darker text-white`;
+      break;
+    }
+
+    case "dark-outline": {
+      classes += `bg-none hover:bg-dark border border-dark text-white`;
+      break;
+    }
+
     default: {
       classes += "bg-primary hover:bg-primary-darker text-white";
       break;
