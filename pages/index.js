@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import Feature from "@/components/Feature";
 import { FeaturesSectionDemo } from "@/components/ui/About";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import {
@@ -75,72 +76,171 @@ const testimonials = [
       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
-    src: "/brands/sensibo.png",
+    src: "/brands/1.svg",
   },
   {
     quote:
       "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
     name: "William Shakespeare",
     title: "Hamlet",
-    src: "/brands/philips.png",
+    src: "/brands/2.svg",
   },
   {
     quote: "All that we see or seem is but a dream within a dream.",
     name: "Edgar Allan Poe",
     title: "A Dream Within a Dream",
-    src: "/brands/nuki.png",
+    src: "/brands/3.svg",
   },
   {
     quote:
       "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
     name: "Jane Austen",
     title: "Pride and Prejudice",
-    src: "/brands/lifx.png",
+    src: "/brands/4.svg",
   },
   {
     quote:
       "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
     name: "Herman Melville",
     title: "Moby-Dick",
-    src: "/brands/sonoff.png",
+    src: "/brands/5.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/6.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/7.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/8.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/9.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/10.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/11.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/12.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/13.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/14.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/15.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/16.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/17.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/18.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/19.svg",
+  },
+  {
+    quote:
+      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+    name: "Herman Melville",
+    title: "Moby-Dick",
+    src: "/brands/20.svg",
   },
 ];
 
 export const categories = [
   {
-    title: "Fashion",
-    description:
-      "Fashion is a form of self-expression that reflects personal style and cultural trends. It evolves with time, blending tradition and innovation to communicate identity and creativity.",
+    title: "59+",
+    description: "Online marketing experts",
     link: "/",
   },
   {
-    title: "Style",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    title: "200+ ",
+    description: "Happy Clients",
     link: "/",
   },
   {
-    title: "Trend",
-    description:
-      "Fashion style is a personal expression of individuality through clothing and accessories, shaped by preferences, trends, and culture. It reflects one's unique identity and aesthetic.",
+    title: "+100%",
+    description: "Passion",
     link: "/",
   },
   {
-    title: "Shopping",
-    description:
-      "Online shopping has revolutionized the way people purchase goods, offering convenience and accessibility from anywhere.",
+    title: "+8",
+    description: "Country",
     link: "/",
   },
   {
-    title: "Casual",
-    description:
-      "Casual fashion is all about comfort and ease, featuring relaxed clothing suitable for everyday wear. Casual fashion is all about comfort and ease, featuring relaxed clothing suitable for everyday wear.",
+    title: "+6",
+    description: "Office",
     link: "/",
   },
   {
-    title: "Modern",
-    description:
-      "Modern fashion blends contemporary trends with innovative designs, often focusing on sustainability, inclusivity, and technology",
+    title: "10+",
+    description: "Years of experience",
     link: "/",
   },
 ];
@@ -194,12 +294,13 @@ export default function Home() {
           <Navbar />
         </SpotlightPreview>
       </section>
-      <section id="about">
-        <FeaturesSectionDemo />
+      <section id="about" className="my-32">
+        {/* <FeaturesSectionDemo /> */}
+        <Container>
+          <Feature />
+        </Container>
       </section>
-      <section className="my-32">
-        <AppleCardsCarouselDemo />
-      </section>
+      <section className="my-32">{/* <AppleCardsCarouselDemo /> */}</section>
       <section id="brands" className="my-32">
         <TypewriterEffectSmooth words={WORDS} />
         <InfiniteMovingCards items={testimonials} />

@@ -32,8 +32,7 @@ export function SpotlightPreview({ children }) {
           DIGIT BUZZ
         </motion.h1>
         <p className="mt-4 font-normal text-lg lg:text-xl text-neutral-300 max-w-lg text-center mx-auto">
-          The Future of Shopping is Here: Bringing Your Style and Needs Together
-          in the Digital World!
+          Online Marketing? We got you covered!
         </p>
         <br />
         <Button type={"button"} variant={"dark-outline"} className={""}>

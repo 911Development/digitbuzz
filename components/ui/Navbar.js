@@ -20,7 +20,7 @@ const Navbar = () => {
             <ul className="flex items-center justify-center gap-6">
               <li>
                 <Link
-                  href={"/"}
+                  href={"/coming-soon"}
                   className="text-muted-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
                   Online Market
