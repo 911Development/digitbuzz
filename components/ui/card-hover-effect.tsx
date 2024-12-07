@@ -49,7 +49,13 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle
+              className={`${
+                idx % 2 === 0 ? "text-purple-500" : "text-orange-500"
+              }`}
+            >
+              {item.title}
+            </CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </div>

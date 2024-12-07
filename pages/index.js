@@ -229,12 +229,12 @@ export const categories = [
     link: "/",
   },
   {
-    title: "+8",
+    title: "8+",
     description: "Country",
     link: "/",
   },
   {
-    title: "+6",
+    title: "6+",
     description: "Office",
     link: "/",
   },
@@ -283,8 +283,7 @@ const trends = [
   },
 ];
 
-const slogan =
-  "The Future of Shopping is Here: Bringing Your Style and Needs Together in the Digital World!";
+const slogan = "The Future of Shopping is Here";
 
 export default function Home() {
   return (
