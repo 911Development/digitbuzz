@@ -309,12 +309,12 @@ export default function Home() {
           <HoverEffect items={categories} />
         </Container>
       </section>
-      <section className="my-32">
+      {/* <section className="my-32">
         <Container>
           <TextGenerateEffect words={slogan} />
           <AnimatedTestimonials testimonials={trends} />
         </Container>
-      </section>
+      </section> */}
     </section>
   );
 }
