@@ -1,7 +1,7 @@
 {
   "online_market": "Online Market",
   "about_us": "About Us",
-  "Brands": "Brands",
+  "brands": "Brands",
   "policies": "Policies",
   "styles": "Styles",
   "contact": "Contact",
@@ -33,5 +33,6 @@
   "passion": "Passion",
   "country": "Country",
   "office": "Ofice",
-  "exp": "Years of Experience"
+  "exp": "Years of Experience",
+  "shipping": "Shipping"
 }
