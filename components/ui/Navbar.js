@@ -98,7 +98,7 @@ const Navbar = () => {
                   </Button>
                 </Link>
               </li>
-              <li className="relative">
+              <li>
                 {/* <Button
                   type={"button"}
                   variant={"dark-outline"}
@@ -202,6 +202,34 @@ const Navbar = () => {
             >
               {t("contact")}
             </Link>
+          </li>
+          <li>
+            {/* <Button
+                  type={"button"}
+                  variant={"dark-outline"}
+                  className={"peer"}
+                >
+                  {t("language")}
+                </Button> */}
+            <section className="flex items-center justify-center gap-3">
+              {locales.map((locale) => (
+                <Link
+                  href={pathname}
+                  key={locale}
+                  locale={locale}
+                  className="flex items-center justify-center gap-3 text-white z-50"
+                >
+                  <span>
+                    <img
+                      src={`/languages/${locale}.png`}
+                      className="w-8"
+                      alt="Language"
+                    />
+                  </span>
+                  {/* <span>{locale?.toUpperCase()}</span> */}
+                </Link>
+              ))}
+            </section>
           </li>
         </ul>
       </motion.section>
