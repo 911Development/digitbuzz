@@ -1,7 +1,7 @@
 {
   "online_market": "Sanal Market",
   "about_us": "Hakkımızda",
-  "Brands": "Markalar",
+  "brands": "Markalar",
   "policies": "Politikalar",
   "styles": "Stiller",
   "contact": "İletişim",
@@ -33,5 +33,7 @@
   "passion": "Tutku",
   "country": "Ülke",
   "office": "Ofis",
-  "exp": "Yıllık deneyim"
+  "exp": "Yıllık deneyim",
+
+  "shipping": "Shipping"
 }
