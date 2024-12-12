@@ -13,6 +13,7 @@ import Navbar from "@/components/ui/Navbar";
 import { SpotlightPreview } from "@/components/ui/SpotlightPreview";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import useTranslation from "next-translate/useTranslation";
 
 const ITEMS = [
   {
@@ -66,6 +67,22 @@ const WORDS = [
   },
   {
     text: "brands",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+];
+
+const WORDS_TR = [
+  {
+    text: "Önde gelen",
+  },
+  {
+    text: "markalar ile",
+  },
+  {
+    text: "işbirliği",
+  },
+  {
+    text: "yapın",
     className: "text-blue-500 dark:text-blue-500",
   },
 ];
@@ -217,31 +234,76 @@ export const categories = [
     title: "59+",
     description: "Online marketing experts",
     link: "/",
+    lang_code: "online_marketing_experts",
   },
   {
     title: "200+ ",
     description: "Happy Clients",
     link: "/",
+    lang_code: "happy_clients",
   },
   {
     title: "+100%",
     description: "Passion",
     link: "/",
+    lang_code: "passion",
   },
   {
     title: "8+",
     description: "Country",
+    lang_code: "country",
     link: "/",
   },
   {
     title: "6+",
     description: "Office",
     link: "/",
+    lang_code: "office",
   },
   {
     title: "10+",
     description: "Years of experience",
     link: "/",
+    lang_code: "exp",
+  },
+];
+
+export const categories_tr = [
+  {
+    title: "59+",
+    description: "Online marketing experts",
+    link: "/",
+    lang_code: "online_marketing_experts",
+  },
+  {
+    title: "200+ ",
+    description: "Happy Clients",
+    link: "/",
+    lang_code: "happy_clients",
+  },
+  {
+    title: "+100%",
+    description: "Passion",
+    link: "/",
+    lang_code: "passion",
+  },
+  {
+    title: "8+",
+    description: "Country",
+    lang_code: "country",
+    link: "/",
+  },
+  {
+    title: "6+",
+    description: "Office",
+    link: "/",
+    lang_code: "office",
+  },
+  {
+    title: "10+",
+    description: "Years of experience",
+    link: "/",
+    lang_code: "exp",
   },
 ];
 
@@ -286,6 +348,8 @@ const trends = [
 const slogan = "The Future of Shopping is Here";
 
 export default function Home() {
+  const { lang } = useTranslation("common");
+
   return (
     <section>
       <section>
@@ -301,12 +365,12 @@ export default function Home() {
       </section>
       <section className="my-32">{/* <AppleCardsCarouselDemo /> */}</section>
       <section id="brands" className="my-32">
-        <TypewriterEffectSmooth words={WORDS} />
+        <TypewriterEffectSmooth words={lang === "en" ? WORDS : WORDS_TR} />
         <InfiniteMovingCards items={testimonials} />
       </section>
       <section id="styles" className="my-32">
         <Container>
-          <HoverEffect items={categories} />
+          <HoverEffect items={lang === "en" ? categories : categories_tr} />
         </Container>
       </section>
       {/* <section className="my-32">
