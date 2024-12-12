@@ -2,8 +2,14 @@ import React from "react";
 import { Spotlight } from "./Spotlight";
 import { motion } from "framer-motion";
 import Button from "./Button";
+import useTranslation from "next-translate/useTranslation";
 
 export function SpotlightPreview({ children }) {
+  const { t, lang } = useTranslation("common");
+
+  console.log("Lang: ", lang); // Should print "en" or "tr"
+  console.log("Translation: ", t("title"));
+
   return (
     <div className="h-[70svh] w-full bg-black antialiased bg-grid-white/[0.02] relative overflow-hidden">
       {children}
@@ -32,11 +38,13 @@ export function SpotlightPreview({ children }) {
           DIGIT BUZZ
         </motion.h1>
         <p className="mt-4 font-normal text-lg lg:text-xl text-neutral-300 max-w-lg text-center mx-auto">
-          Online Marketing? We got you covered!
+          {/* Online Marketing? We got you covered! */}
+          {t("header_paragraph")}
         </p>
         <br />
         <Button type={"button"} variant={"dark-outline"} className={""}>
-          Explore more
+          {/* Explore more */}
+          {t("explore_more")}
         </Button>
       </div>
     </div>

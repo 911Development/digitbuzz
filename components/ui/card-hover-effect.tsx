@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,6 +16,8 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const { t } = useTranslation("common");
 
   return (
     <div
@@ -56,7 +59,7 @@ export const HoverEffect = ({
             >
               {item.title}
             </CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardDescription>{t(item.lang_code)}</CardDescription>
           </Card>
         </div>
       ))}

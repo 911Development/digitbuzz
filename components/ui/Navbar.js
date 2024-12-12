@@ -4,13 +4,27 @@ import Image from "next/image";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import useTranslation from "next-translate/useTranslation";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const { locale, locales, pathname } = useRouter();
+
   const [menu, setMenu] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState(null);
 
   const handleMenu = () => setMenu(!menu);
+
+  const { t, lang } = useTranslation("common");
+
+  useEffect(
+    function () {
+      setCurrentLanguage(lang);
+    },
+    [lang]
+  );
 
   return (
     <>
@@ -23,7 +37,7 @@ const Navbar = () => {
                   href={"/coming-soon"}
                   className="text-muted-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
-                  Online Market
+                  {t("online_market")}
                 </Link>
               </li>
               <li>
@@ -31,7 +45,7 @@ const Navbar = () => {
                   href={"#about"}
                   className="text-muted-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
-                  About Us
+                  {t("about_us")}
                 </Link>
               </li>
               <li>
@@ -39,7 +53,7 @@ const Navbar = () => {
                   href={"#brands"}
                   className="text-muted-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
-                  Brands
+                  {t("brands")}
                 </Link>
               </li>
             </ul>
@@ -63,7 +77,7 @@ const Navbar = () => {
                   href={"/"}
                   className="text-muted-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
-                  Policies
+                  {t("policies")}
                 </Link>
               </li>
               <li>
@@ -71,7 +85,7 @@ const Navbar = () => {
                   href={"#styles"}
                   className="text-muted-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
-                  Styles
+                  {t("styles")}
                 </Link>
               </li>
               <li>
@@ -80,9 +94,37 @@ const Navbar = () => {
                   // className="text-muted-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
                   <Button type={"button"} variant={"dark-outline"}>
-                    Contact
+                    {t("contact")}
                   </Button>
                 </Link>
+              </li>
+              <li className="relative">
+                {/* <Button
+                  type={"button"}
+                  variant={"dark-outline"}
+                  className={"peer"}
+                >
+                  {t("language")}
+                </Button> */}
+                <section className="flex items-center justify-center gap-3">
+                  {locales.map((locale) => (
+                    <Link
+                      href={pathname}
+                      key={locale}
+                      locale={locale}
+                      className="flex items-center justify-center gap-3 text-white z-50"
+                    >
+                      <span>
+                        <img
+                          src={`/languages/${locale}.png`}
+                          className="w-8"
+                          alt="Language"
+                        />
+                      </span>
+                      {/* <span>{locale?.toUpperCase()}</span> */}
+                    </Link>
+                  ))}
+                </section>
               </li>
             </ul>
           </section>
@@ -115,7 +157,7 @@ const Navbar = () => {
               href={"/"}
               className="text-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
             >
-              Online Market
+              {t("online_market")}
             </Link>
           </li>
           <li>
@@ -124,7 +166,7 @@ const Navbar = () => {
               className="text-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
               onClick={handleMenu}
             >
-              About Us
+              {t("about_us")}
             </Link>
           </li>
           <li>
@@ -133,7 +175,7 @@ const Navbar = () => {
               className="text-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
               onClick={handleMenu}
             >
-              Brands
+              {t("brands")}
             </Link>
           </li>
           <li>
@@ -141,7 +183,7 @@ const Navbar = () => {
               href={"/"}
               className="text-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
             >
-              Policies
+              {t("policies")}
             </Link>
           </li>
           <li>
@@ -150,7 +192,7 @@ const Navbar = () => {
               className="text-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
               onClick={handleMenu}
             >
-              Styles
+              {t("styles")}
             </Link>
           </li>
           <li>
@@ -158,7 +200,7 @@ const Navbar = () => {
               href={"/"}
               className="text-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
             >
-              Contact
+              {t("contact")}
             </Link>
           </li>
         </ul>
