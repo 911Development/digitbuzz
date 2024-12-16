@@ -34,5 +34,20 @@
   "country": "Country",
   "office": "Ofice",
   "exp": "Years of Experience",
-  "shipping": "Shipping"
+  "shipping": "Shipping",
+
+  "know": "Let's get to know you",
+  "hello": "Hello, my name is",
+  "email": "my email is",
+  "phone": "My phone number is",
+  "work": "I work in",
+  "discuss": "I want to discuss",
+
+  "name_ph": "Name",
+  "email_ph": "Email",
+  "phone_ph": "Phone",
+  "industry_ph": "Industry",
+  "company_ph": "Company",
+  "subject_ph": "Subject",
+  "message_ph": "Message"
 }

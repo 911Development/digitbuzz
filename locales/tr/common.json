@@ -34,6 +34,20 @@
   "country": "Ülke",
   "office": "Ofis",
   "exp": "Yıllık deneyim",
+  "shipping": "Shipping",
 
-  "shipping": "Shipping"
+  "know": "Seni Tanıyalım",
+  "hello": "Merhaba, benim adım",
+  "email": "E posta adresim",
+  "phone": "Telefon numaram",
+  "work": "Çalışmakta olduğum",
+  "discuss": "Tartışmak istediğim",
+
+  "name_ph": "İsim",
+  "email_ph": "Email",
+  "phone_ph": "Telefon",
+  "industry_ph": "Endüstri",
+  "company_ph": "Şirket",
+  "subject_ph": "Konu",
+  "message_ph": "Mesaj"
 }

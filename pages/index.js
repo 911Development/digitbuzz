@@ -6,6 +6,7 @@ import {
   Carousel,
   CarouselContext,
 } from "@/components/ui/apple-cards-carousel";
+import Button from "@/components/ui/Button";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { AppleCardsCarouselDemo } from "@/components/ui/CardCarousel";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
@@ -13,7 +14,10 @@ import Navbar from "@/components/ui/Navbar";
 import { SpotlightPreview } from "@/components/ui/SpotlightPreview";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useTranslation from "next-translate/useTranslation";
+import { useRef } from "react";
 
 const ITEMS = [
   {
@@ -348,7 +352,17 @@ const trends = [
 const slogan = "The Future of Shopping is Here";
 
 export default function Home() {
-  const { lang } = useTranslation("common");
+  const { t, lang } = useTranslation("common");
+  const textAreaRef = useRef();
+
+  function handleOnKeyDown(e) {
+    if (e.key === "Enter") e.preventDefault();
+  }
+
+  function handleTextAreaOnInput(e) {
+    e.target.style.height = "auto";
+    e.target.style.height = `${e.target.scrollHeight}px`;
+  }
 
   return (
     <section>
@@ -371,6 +385,105 @@ export default function Home() {
       <section id="styles" className="my-32">
         <Container>
           <HoverEffect items={lang === "en" ? categories : categories_tr} />
+        </Container>
+      </section>
+      <section id="contact" className="my-32">
+        <Container>
+          <section className="mb-8">
+            <h2 className="font-bold text-3xl text-center">{t("know")}</h2>
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
+            <p className="font-bold text-2xl lg:text-4xl text-nowrap mb-2">
+              {t("hello")}
+            </p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder={t("name_ph")}
+              className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+            />
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
+            <p className="font-bold text-2xl lg:text-4xl text-nowrap mb-2">
+              {t("email")}
+            </p>
+            <input
+              type="email"
+              id="email"
+              name="name"
+              placeholder={t("email_ph")}
+              className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+            />
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
+            <p className="font-bold text-2xl lg:text-4xl text-nowrap mb-2">
+              {t("phone")}
+            </p>
+            <input
+              type="tel"
+              id="Phone"
+              name="Phone"
+              placeholder={t("phone_ph")}
+              className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+            />
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
+            <p className="font-bold text-2xl lg:text-4xl text-nowrap mb-2">
+              {t("work")}
+            </p>
+            <section className="flex items-center justify-center gap-3 w-full">
+              <input
+                type="text"
+                id="industry"
+                name="industry"
+                placeholder={t("industry_ph")}
+                className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+              />
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder={t("company_ph")}
+                className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+              />
+            </section>
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
+            <p className="font-bold text-2xl lg:text-4xl text-nowrap mb-2">
+              {t("discuss")}
+            </p>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder={t("subject_ph")}
+              className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+            />
+          </section>
+          <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-4">
+            <textarea
+              id="message"
+              name="message"
+              placeholder={t("message_ph")}
+              className="block w-full border-b focus:border-b-primary ring-0 outline-none transition-all delay"
+              onKeyDown={handleOnKeyDown}
+              onInput={handleTextAreaOnInput}
+              style={{ resize: "none" }}
+            />
+          </section>
+          <section className="lg:Flex lg:items-center lg:justify-center lg:gap-6">
+            <Button
+              type={"button"}
+              variant={"primary"}
+              className={
+                "flex items-center justify-center gap-3 w-full py-3 lg:w-auto lg:py-2"
+              }
+            >
+              <FontAwesomeIcon icon={faPaperPlane} />
+              <span>Send</span>
+            </Button>
+          </section>
         </Container>
       </section>
       {/* <section className="my-32">

@@ -89,10 +89,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href={"/"}
-                  // className="text-muted-dark  text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
-                >
+                <Link href={"#contact"}>
                   <Button type={"button"} variant={"dark-outline"}>
                     {t("contact")}
                   </Button>
