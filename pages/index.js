@@ -389,7 +389,7 @@ export default function Home() {
       </section>
       <section id="contact" className="my-32">
         <Container className={"!w-1/2"}>
-          <section className="mb-8">
+          <section className="mb-12">
             <h2 className="font-bold text-3xl text-center">{t("know")}</h2>
           </section>
           <section className="lg:flex lg:items-center lg:justify-center lg:gap-6 mb-12 lg:mb-24">
