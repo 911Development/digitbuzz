@@ -388,7 +388,7 @@ export default function Home() {
         </Container>
       </section>
       <section id="contact" className="my-32">
-        <Container>
+        <Container className={"!w-1/2"}>
           <section className="mb-8">
             <h2 className="font-bold text-3xl text-center">{t("know")}</h2>
           </section>
