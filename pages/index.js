@@ -264,12 +264,12 @@ export const categories = [
     link: "/",
     lang_code: "office",
   },
-  {
-    title: "10+",
-    description: "Years of experience",
-    link: "/",
-    lang_code: "exp",
-  },
+  // {
+  //   title: "10+",
+  //   description: "Years of experience",
+  //   link: "/",
+  //   lang_code: "exp",
+  // },
 ];
 
 export const categories_tr = [
@@ -303,12 +303,12 @@ export const categories_tr = [
     link: "/",
     lang_code: "office",
   },
-  {
-    title: "10+",
-    description: "Years of experience",
-    link: "/",
-    lang_code: "exp",
-  },
+  // {
+  //   title: "10+",
+  //   description: "Years of experience",
+  //   link: "/",
+  //   lang_code: "exp",
+  // },
 ];
 
 const trends = [

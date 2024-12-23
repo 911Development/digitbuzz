@@ -19,6 +19,15 @@ const Navbar = () => {
 
   const { t, lang } = useTranslation("common");
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    if (menu) body.style.overflow = "hidden";
+    else body.style.overflow = "auto";
+
+    return () => (document.body.style.overflow = "auto");
+  }, [menu]);
+
   useEffect(
     function () {
       setCurrentLanguage(lang);
@@ -34,7 +43,7 @@ const Navbar = () => {
             <ul className="flex items-center justify-center gap-6">
               <li>
                 <Link
-                  href={"/coming-soon"}
+                  href={"/online-market"}
                   className="text-muted-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
                 >
                   {t("online_market")}
@@ -151,7 +160,7 @@ const Navbar = () => {
           <h1 className="font-semibold text-dark text-3xl">Digit Buzz</h1>
           <li>
             <Link
-              href={"/"}
+              href={"/online-market"}
               className="text-dark text-sm font-[500] hover:text-white hover:tracking-wider transition-all delay"
             >
               {t("online_market")}

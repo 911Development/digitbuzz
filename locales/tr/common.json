@@ -25,7 +25,7 @@
   "content_marketing": "İçerik Pazarlama",
   "content_marketing_p": "İçerik kraldır – ancak hedef kitleye özel içeriğimizle tacı ona takıyoruz. İçerik teklifimiz blog yazıları, sosyal medya içerikleri, e-posta pazarlaması, videolar ve daha fazlası dahil olmak üzere çok çeşitli format ve kanalları kapsar. Dilimiz markanız için tasarlanmıştır. Ürününüze ve hedef kitlenize uyan bir içerik stratejisi geliştiriyoruz!",
 
-  "marketing_workshops": "Pazarlama Atalyöeleri",
+  "marketing_workshops": "Pazarlama Atölyesi",
   "marketing_workshops_p": "Çevrimiçi pazarlama atölyelerimizde, her ölçekteki şirketin dijital pazarlamadaki en son trendleri, stratejileri ve en iyi uygulamaları öğrenmesine yardımcı oluyoruz. SEO, SEA, SMA, Tıklama başına ödeme (PPC), e-posta pazarlaması vb. olsun - atölyelerimizi anlaşılır bir şekilde oluşturuyoruz, böylece bu terimler artık yabancı kelimeler değil. Bilginizi bizimle artırın",
 
   "online_marketing_experts": "Online Pazarlama Uzmanı",
@@ -49,5 +49,9 @@
   "industry_ph": "Endüstri",
   "company_ph": "Şirket",
   "subject_ph": "Konu",
-  "message_ph": "Mesaj"
+  "message_ph": "Mesaj",
+
+  "coming_soon": "Çok yakında...",
+  "coming_soon_p": "Yeni Bir Dönem Yakında Başlıyor!",
+  "homepage": "Anasayfa"
 }

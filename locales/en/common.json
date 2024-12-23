@@ -49,5 +49,9 @@
   "industry_ph": "Industry",
   "company_ph": "Company",
   "subject_ph": "Subject",
-  "message_ph": "Message"
+  "message_ph": "Message",
+
+  "coming_soon": "Coming Soon",
+  "coming_soon_p": "A New Era Begins Soon!",
+  "homepage": "Homepage"
 }
